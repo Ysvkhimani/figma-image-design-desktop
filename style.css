@@ -185,9 +185,8 @@
     display: none;
  }
 
- .frame {
+ .grid {
     padding: 40px;
-
  }
 
  .frame img {
@@ -200,13 +199,15 @@
  }
 
  .ig {
-    display: flex;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
     justify-content: space-around;
-    flex-wrap: wrap;
+    grid-gap:10px;
  }
 
- .im {
-    display: flex;
+ #im {
+      width:270px;
+      height: 320px;
     justify-content: space-around;
     flex-wrap: wrap;
 
@@ -485,6 +486,11 @@
        text-align: center;
        padding: 0 80px 20px;
     }
+
+    /*box-4*/
+    .ig{
+      grid-template-columns: auto auto ;
+    }
  }
 
  @media only screen and (max-width: 370px) {
@@ -492,6 +498,11 @@
        display: none;
     }
 
+
+     /*box-4*/
+     .ig{
+      grid-template-columns: auto;
+    }
     .main5 .bx .bx1,
     .main5 .bx .bx2 {
        padding: 0px 14px;
